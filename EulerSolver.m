@@ -1,6 +1,6 @@
 function [tout,yout] = EulerSolver(f,t,y0)
 %EulerSolver Uses the Euler method to find solutions to the right hand side
-%of an ODE described by f(t,y)
+%of an ODE described by f(t,y), works with vectorized DEs
 N = length(t);
 h = t(2);
 yout = zeros(length(y0),N);
